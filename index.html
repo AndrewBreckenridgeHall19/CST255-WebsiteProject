@@ -2,68 +2,94 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Andrew Breckenridge-Hall | Computer Science Journey</title>
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Breckenridge-Hall | Home</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <header>
-    <h1>My Computer Science Journey</h1>
+  <header class="site-header">
+    <div class="header-container">
+      <h1>Andrew Breckenridge-Hall</h1>
 
-    <nav>
-      <a href="index.html">Home</a> |
-      <a href="career.html">Career Interests</a> |
-      <a href="goals.html">Future Goals</a>
-    </nav>
+      <nav>
+        <ul class="nav-list">
+          <li><a class="current-page" href="index.html">Home</a></li>
+          <li><a href="career.html">Career Interests</a></li>
+          <li><a href="goals.html">Future Goals</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
+  <main class="page-container">
 
-    <h2>About Me</h2>
+    <section class="hero-section">
+      <div class="hero-content">
+        <p class="page-label">Personal Introduction</p>
 
-    <p>
-      My name is Andrew Breckenridge-Hall, and my major is computer science.
-      I am interested in learning more about coding, technology, and web
-      development.
-    </p>
+        <h2>Welcome to My Website</h2>
 
-    <p>
-      I want to build my skills in HTML and CSS so I can better understand
-      how websites are created, organized, tested, and improved.
-    </p>
+        <p>
+          My name is Andrew, and I am majoring in computer science. I am
+          interested in learning more about coding, web development, software,
+          and the ways technology can be used to solve problems.
+        </p>
 
-    <img
-      src="images/computer-science.png"
-      alt="Computer displaying programming code"
-    >
+        <p>
+          I want to build my skills in HTML and CSS so I can better understand
+          how websites are created, styled, organized, and maintained.
+        </p>
 
-    <hr>
+        <a class="button-link" href="career.html">Explore My Career Interests</a>
+      </div>
 
-    <h2>My Career Interests</h2>
+      <div class="hero-image-container">
+        <img
+          class="page-image"
+          src="images/computer-science.png"
+          alt="Computer screen displaying computer science programming code">
+      </div>
+    </section>
 
-    <p>
-      In the future, I would like to use my computer science knowledge to
-      work with software, websites, or technology systems. I also want to
-      combine the skills I learn in this field with my clothing brand.
-      Whether that means creating and improving my fashion brand's website
-      for a better customer experience or using technology to help create
-      designs, I want to become faster, more creative, and more efficient.
-    </p>
+    <section class="content-grid">
 
-    <h2>Skills I Want to Learn</h2>
+      <article class="content-card">
+        <h2>About Me</h2>
 
-    <ul>
-      <li>Writing clean HTML</li>
-      <li>Building organized webpages</li>
-      <li>Using GitHub to manage projects</li>
-      <li>Understanding CSS styling</li>
-      <li>Creating websites for my clothing brand</li>
-    </ul>
+        <p>
+          Computer science interests me because it combines creativity,
+          technology, and problem-solving. It also provides opportunities to
+          create useful programs, websites, and digital experiences.
+        </p>
+
+        <p>
+          I am especially interested in applying technology to my personal
+          clothing brand. Strong web development skills could help me create a
+          better online shopping experience and present my designs more
+          professionally.
+        </p>
+      </article>
+
+      <aside class="sidebar-card">
+        <h2>Skills I Want to Learn</h2>
+
+        <ul>
+          <li>Writing clean HTML</li>
+          <li>Creating organized webpages</li>
+          <li>Designing layouts with CSS</li>
+          <li>Using GitHub for projects</li>
+          <li>Improving website usability</li>
+        </ul>
+      </aside>
+
+    </section>
 
   </main>
 
-  <footer>
-    <p>Created by Andrew Breckenridge-Hall for CST255.</p>
+  <footer class="site-footer">
+    <p>&copy; 2026 Andrew Breckenridge-Hall | CST255 Website Project</p>
   </footer>
 
 </body>
