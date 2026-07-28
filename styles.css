@@ -245,3 +245,40 @@ body {
     font-size: 1.65rem;
   }
 }
+
+/* JavaScript interaction sections */
+
+.interactive-section {
+  text-align: center;
+}
+
+.action-button {
+  background-color: #1f4e79;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  margin: 0.75rem 0;
+  font-size: 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #163d5f;
+}
+
+.action-button:focus {
+  outline: 3px solid #f4b942;
+  outline-offset: 3px;
+}
+
+.interactive-message {
+  background-color: #f4f7fa;
+  border-left: 4px solid #1f4e79;
+  margin: 1rem auto;
+  padding: 1rem;
+  max-width: 650px;
+  text-align: left;
+}
+
