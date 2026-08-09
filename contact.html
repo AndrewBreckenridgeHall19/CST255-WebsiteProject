@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrew Breckenridge-Hall | Contact</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <h1>Andrew Breckenridge-Hall</h1>
+
+      <nav>
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="career.html">Career Interests</a></li>
+          <li><a href="goals.html">Future Goals</a></li>
+          <li><a class="current-page" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-container">
+
+    <section class="content-section">
+      <p class="page-label">Contact Me</p>
+
+      <h2>Send Me a Message</h2>
+
+      <p>
+        Use the form below to contact me with a question or message.
+        Please complete all required fields before submitting the form.
+      </p>
+
+      <form id="contact-form">
+
+        <div class="form-group">
+          <label for="full-name">Full Name</label>
+          <input
+            type="text"
+            id="full-name"
+            name="full-name"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required>
+        </div>
+
+        <div class="form-group">
+          <label for="topic">Topic</label>
+          <select id="topic" name="topic" required>
+            <option value="">Select a topic</option>
+            <option value="career">Career Interests</option>
+            <option value="web-development">Web Development</option>
+            <option value="computer-science">Computer Science</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            minlength="10"
+            required></textarea>
+        </div>
+
+        <p id="form-error" class="form-error" hidden></p>
+
+        <button type="submit" class="action-button">
+          Send Message
+        </button>
+
+        <p id="form-success" class="interactive-message" hidden>
+          Thank you! Your message has been completed successfully.
+        </p>
+
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Andrew Breckenridge-Hall | CST255 Website Project</p>
+  </footer>
+
+</body>
+</html>
