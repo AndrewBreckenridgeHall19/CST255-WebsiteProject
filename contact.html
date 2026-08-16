@@ -75,7 +75,11 @@
             name="message"
             rows="6"
             minlength="10"
+            aria-describedby="message-feedback"
             required></textarea>
+          <p id="message-feedback" class="message-feedback" aria-live="polite">
+            0 characters entered; 10 required.
+          </p>
         </div>
 
         <p id="form-error" class="form-error" hidden></p>
