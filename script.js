@@ -38,8 +38,23 @@ if (contactForm) {
   const email = document.getElementById("email");
   const topic = document.getElementById("topic");
   const message = document.getElementById("message");
+  const messageFeedback = document.getElementById("message-feedback");
   const formError = document.getElementById("form-error");
   const formSuccess = document.getElementById("form-success");
+
+  // Give users immediate progress toward the existing message requirement.
+  function updateMessageFeedback() {
+    const minimumLength = Number(message.getAttribute("minlength"));
+    const characterCount = message.value.trim().length;
+    const minimumMet = characterCount >= minimumLength;
+
+    messageFeedback.textContent = minimumMet
+      ? `${characterCount} characters entered; minimum met.`
+      : `${characterCount} characters entered; ${minimumLength - characterCount} more required.`;
+    messageFeedback.classList.toggle("minimum-met", minimumMet);
+  }
+
+  message.addEventListener("input", updateMessageFeedback);
 
   contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
@@ -84,6 +99,7 @@ if (contactForm) {
     formSuccess.hidden = false;
 
     contactForm.reset();
+    updateMessageFeedback();
   });
 }
 

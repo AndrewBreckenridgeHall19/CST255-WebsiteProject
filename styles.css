@@ -321,6 +321,16 @@ body {
   resize: vertical;
 }
 
+.message-feedback {
+  margin: 0.35rem 0 0;
+  color: #555555;
+  font-size: 0.9rem;
+}
+
+.message-feedback.minimum-met {
+  color: #26703c;
+}
+
 .form-error {
   color: #b3261e;
   font-weight: bold;
